@@ -1,3 +1,5 @@
+CHEF_POLICYFILE=webserver
+
 if [ -z ${CHEF_POLICYFILE+x} ]; then
   echo "You must set CHEF_POLICYFILE to a policyfile name."
   echo
@@ -5,7 +7,6 @@ if [ -z ${CHEF_POLICYFILE+x} ]; then
   exit 1
 fi
 
-CHEF_POLICYFILE=webserver
 scaffold_policy_name="$CHEF_POLICYFILE"
 pkg_name=apache2
 pkg_origin=seankbeard
