@@ -4,7 +4,7 @@
 # https://docs.chef.io/policyfile.html
 
 # A name that describes what the system you're building with Chef does.
-name "webserver"
+name 'webserver'
 
 # Where to find external cookbooks:
 default_source :supermarket
@@ -13,6 +13,6 @@ default_source :supermarket
 cookbook 'apache', github: 'seankbeard/cookbooks', branch: 'master', rel: 'apache'
 
 # # run_list: chef-client will run these recipes in the order specified.
-run_list 'apache::default'
-run_list 'os-hardening'
+run_list ['apache::default',
+          'os-hardening']
 
