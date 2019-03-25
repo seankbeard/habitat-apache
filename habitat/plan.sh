@@ -10,7 +10,7 @@ fi
 scaffold_policy_name="$CHEF_POLICYFILE"
 pkg_name=apache2
 pkg_origin=seankbeard
-pkg_version="2.5.0"
+pkg_version="3.0.0"
 pkg_description="The Chef $scaffold_policy_name Policy"
 pkg_upstream_url="http://chef.io"
 pkg_scaffolding="core/scaffolding-chef"
