@@ -11,9 +11,8 @@ default_source :supermarket
 
 # Specify a custom source for a cookbook:
 cookbook 'apache', github: 'seankbeard/cookbooks', branch: 'master', rel: 'apache'
-cookbook 'audit_agr', git: 'https://github.com/anthonygrees/audit_agr.git'
+cookbook 'myaudit', github: 'seankbeard/cookbooks', branch: 'master', rel: 'myaudit'
 
 # # run_list: chef-client will run these recipes in the order specified.
 run_list ['apache::default',
-          'audit_agr',
-          'os-hardening']
+          'myaudit::default']
