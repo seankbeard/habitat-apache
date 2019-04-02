@@ -14,5 +14,4 @@ cookbook 'apache', github: 'seankbeard/cookbooks', branch: 'master', rel: 'apach
 cookbook 'myaudit', github: 'seankbeard/cookbooks', branch: 'master', rel: 'myaudit'
 
 # # run_list: chef-client will run these recipes in the order specified.
-run_list ['apache::default',
-          'myaudit::default']
+run_list ['apache::default', 'myaudit::default']
